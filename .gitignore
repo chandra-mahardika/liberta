@@ -32,11 +32,9 @@ Desktop.ini
 
 # Internal docs & scripts (not uploaded)
 /AGENTS.md
-/ARCHITECTURE.md
 /CONFIG.md
 /GIT_STEP.md
 /liberta.png
 /PRD.md
-/PROJECT_STRUCTURE.md
 /publish-all.ps1
 /SECURITY_FIXES.md
