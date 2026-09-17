@@ -20,6 +20,7 @@ Liberta adalah framework microservice berbasis native PHP yang ringan, transpara
 - [Pengujian & Static Analysis](#pengujian--static-analysis)
 - [Aplikasi Microservice](#aplikasi-microservice)
 - [Keamanan](#keamanan)
+- [Author](#author)
 - [Lisensi](#lisensi)
 
 ---
@@ -402,6 +403,13 @@ Business logic service **tenant-aware**.
 
 ---
 
+## Author
+
+**Chandra Mahardika**
+- Email: chandra.libertania@gmail.com
+
+---
+
 ## Lisensi
 
-MIT License — Copyright (c) 2026 Chandra Liberta
+MIT License — Copyright (c) 2026 Chandra Mahardika
