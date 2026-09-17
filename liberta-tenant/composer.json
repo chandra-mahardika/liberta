@@ -1,0 +1,25 @@
+{
+    "name": "chandra/liberta-tenant",
+    "description": "Multi-tenant context resolver for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chandra Mahardika",
+            "email": "chandra.libertania@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Liberta\\Tenant\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "chandra/liberta-connection": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}

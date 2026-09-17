@@ -1,0 +1,15 @@
+{
+    "name": "chandra/liberta-report",
+    "description": "Report generation (PDF, Excel, Word) for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{"name": "Chandra Mahardika", "email": "chandra.libertania@gmail.com"}],
+    "autoload": {"psr-4": {"Liberta\\Report\\": "src/"}},
+    "require": {
+        "php": "^8.2",
+        "dompdf/dompdf": "^2.0",
+        "phpoffice/phpspreadsheet": "^1.29",
+        "phpoffice/phpword": "^1.1"
+    },
+    "require-dev": {"phpunit/phpunit": "^10.5"}
+}

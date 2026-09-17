@@ -1,0 +1,14 @@
+{
+    "name": "chandra/liberta-oauth",
+    "description": "OAuth2 provider and client for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{"name": "Chandra Mahardika", "email": "chandra.libertania@gmail.com"}],
+    "autoload": {"psr-4": {"Liberta\\OAuth\\": "src/"}},
+    "require": {
+        "php": "^8.2",
+        "chandra/liberta-jwt": "^1.0",
+        "chandra/liberta-sql-builder": "^1.0"
+    },
+    "require-dev": {"phpunit/phpunit": "^10.5"}
+}

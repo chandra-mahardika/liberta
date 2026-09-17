@@ -1,0 +1,24 @@
+{
+    "name": "chandra/liberta-event",
+    "description": "Event dispatcher for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chandra Mahardika",
+            "email": "chandra.libertania@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Liberta\\Event\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}

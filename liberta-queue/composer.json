@@ -1,0 +1,13 @@
+{
+    "name": "chandra/liberta-queue",
+    "description": "Job queue for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{"name": "Chandra Mahardika", "email": "chandra.libertania@gmail.com"}],
+    "autoload": {"psr-4": {"Liberta\\Queue\\": "src/"}},
+    "require": {
+        "php": "^8.2",
+        "chandra/liberta-sql-builder": "^1.0"
+    },
+    "require-dev": {"phpunit/phpunit": "^10.5"}
+}

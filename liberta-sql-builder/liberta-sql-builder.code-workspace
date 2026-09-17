@@ -1,0 +1,32 @@
+{
+	"folders": [
+		{
+			"name": "liberta-sql-builder",
+			"path": "."
+		},
+		{
+			"name": "liberta-router",
+			"path": "../liberta-router"
+		},
+		{
+			"name": "liberta-middleware",
+			"path": "../liberta-middleware"
+		},
+		{
+			"name": "liberta-http",
+			"path": "../liberta-http"
+		},
+		{
+			"name": "liberta-rbac-client",
+			"path": "../liberta-rbac-client"
+		},
+		{
+			"name": "liberta-auth-service",
+			"path": "../liberta-auth-service"
+		},
+		{
+			"path": "../liberta-bussiness-service"
+		}
+	],
+	"settings": {}
+}

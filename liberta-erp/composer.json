@@ -1,0 +1,23 @@
+{
+    "name": "chandra/liberta-erp",
+    "description": "ERP modules for Liberta (Accounting, Inventory, Purchasing, Sales, HR, CRM)",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{"name": "Chandra Mahardika", "email": "chandra.libertania@gmail.com"}],
+    "autoload": {
+        "psr-4": {
+            "Modules\\Accounting\\": "accounting/src/",
+            "Modules\\Inventory\\": "inventory/src/",
+            "Modules\\Purchasing\\": "purchasing/src/",
+            "Modules\\Sales\\": "sales/src/",
+            "Modules\\Hr\\": "hr/src/",
+            "Modules\\Crm\\": "crm/src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "chandra/liberta-router": "^1.0",
+        "chandra/liberta-sql-builder": "^1.0"
+    },
+    "require-dev": {"phpunit/phpunit": "^10.5"}
+}

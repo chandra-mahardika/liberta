@@ -1,0 +1,30 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Liberta\Cli\Application;
+use Liberta\Cli\Commands\MigrateCommand;
+use Liberta\Cli\Commands\SeedCommand;
+use Liberta\Cli\Commands\MakeCommand;
+
+$version = '1.0.0';
+
+// Load project config if available
+$configPath = dirname(__DIR__, 3) . '/config/app.php';
+if (file_exists($configPath)) {
+    $config = require $configPath;
+    $version = $config['version'] ?? $version;
+}
+
+$app = new Application($version);
+
+// Register built-in commands
+// These will be overridden if the project provides its own implementations
+$app->register(new MakeCommand(dirname(__DIR__, 3)));
+
+// Migrate and Seed commands require database setup
+// They are registered when the application bootstraps the DB connection
+// For standalone CLI usage, the project's bin/liberta.php should register them
+
+$app->run($argv);

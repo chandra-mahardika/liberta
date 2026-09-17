@@ -1,0 +1,53 @@
+┌────────────────────────┐
+│      Application       │
+│ (Service / Controller) │
+└───────────┬────────────┘
+            │
+            ▼
+┌────────────────────────┐
+│        Builder         │
+│------------------------│
+│ - table                │
+│ - columns              │
+│ - wheres               │
+│ - joins                │
+│ - ctes                 │
+│ - unions               │
+│ - limit / offset       │
+│ - insertData           │
+│ - updateData           │
+│ - bindings             │
+│------------------------│
+│ + where()              │
+│ + limit()              │
+│ + offset()             │
+│ + getBindings()        │
+│ + toSql()              │───┐
+└───────────┬────────────┘   │
+            │ uses           │ delegates
+            ▼                │
+┌────────────────────────┐   │
+│        Grammar         │◄──┘
+│------------------------│
+│ + compileSelect()      │
+│ + compileInsert()      │
+│ + compileUpdate()      │
+│ + compileDelete()      │
+│ + compileWheres()      │
+│ + compileLimit()       │
+│------------------------│
+│ SQL DIALECT ONLY       │
+└───────────┬────────────┘
+            │ produces SQL
+            ▼
+┌────────────────────────┐
+│        Executor        │
+│------------------------│
+│ + select()             │
+│ + first()              │
+│ + insert()             │
+│ + update()             │
+│ + delete()             │
+│------------------------│
+│ PDO / Transaction      │
+└────────────────────────┘

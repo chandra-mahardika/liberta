@@ -1,0 +1,8 @@
+| Package             | Auth Service | Business Service |
+| ------------------- | ------------ | ---------------- |
+| liberta-router      | ✅            | ✅                |
+| liberta-http        | ✅            | ✅                |
+| liberta-middleware  | ✅            | ✅                |
+| liberta-rbac-client | ❌            | ✅                |
+| liberta-sql-builder | ✅            | ✅                |
+| firebase/php-jwt    | ✅            | ❌                |

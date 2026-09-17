@@ -1,0 +1,10 @@
+{
+    "name": "chandra/liberta-cache",
+    "description": "Cache abstraction for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{"name": "Chandra Mahardika", "email": "chandra.libertania@gmail.com"}],
+    "autoload": {"psr-4": {"Liberta\\Cache\\": "src/"}},
+    "require": {"php": "^8.2"},
+    "require-dev": {"phpunit/phpunit": "^10.5"}
+}

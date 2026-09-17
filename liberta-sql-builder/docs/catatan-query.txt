@@ -1,0 +1,17 @@
+UPDATE orders o
+JOIN (
+    SELECT orderNumber, SUM(priceEach) AS total_price
+    FROM orderdetails
+    GROUP BY orderNumber
+) d ON d.orderNumber = o.orderNumber
+SET o.amount = d.total_price;
+
+UPDATE orders o
+JOIN (
+    SELECT 
+        orderNumber,
+        SUM(quantityOrdered * priceEach) AS total_price
+    FROM orderdetails
+    GROUP BY orderNumber
+) d ON d.orderNumber = o.orderNumber
+SET o.amount = d.total_price;

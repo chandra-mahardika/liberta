@@ -1,0 +1,7 @@
+| Prinsip         | Implementasi                                   |
+| --------------- | ---------------------------------------------- |
+| Stateless       | Builder hanya menyimpan query, bukan data      |
+| Immutable-like  | Method return `$this` (boleh mutable internal) |
+| Explicit        | Semua kolom & table ditulis jelas              |
+| Predictable SQL | SQL bisa di-debug                              |
+| Testable        | Builder → SQL → binding                        |

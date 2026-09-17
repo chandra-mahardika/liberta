@@ -1,0 +1,13 @@
+{
+    "name": "chandra/liberta-jwt",
+    "description": "Standalone JWT package for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{"name": "Chandra Mahardika", "email": "chandra.libertania@gmail.com"}],
+    "autoload": {"psr-4": {"Liberta\\Jwt\\": "src/"}},
+    "require": {
+        "php": "^8.2",
+        "firebase/php-jwt": "^6.10"
+    },
+    "require-dev": {"phpunit/phpunit": "^10.5"}
+}

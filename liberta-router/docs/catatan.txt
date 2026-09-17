@@ -1,0 +1,38 @@
+cara penggunaan :
+
+$router = new Router();
+
+$router->group([
+    'prefix' => '/api',
+    'middleware' => ['auth']
+], function ($router) {
+
+    $router->get('/users/{id}', [UserController::class, 'show']);
+});
+
+di framework :
+$route = $router->dispatch($method, $uri);
+
+middleware di framework :
+
+[
+  'auth' => AuthMiddleware::class,
+  'rbac' => RbacMiddleware::class,
+]
+
+
+Flow
+
+Request
+ → Router (match)
+ → MiddlewarePipeline
+ → Controller
+ → Response
+
+Peta package
+liberta-router        → routing only
+liberta-http          → request / response
+liberta-middleware    → pipeline
+liberta-rbac-client   → auth service client (next)
+LMF                   → kernel + glue
+Business Service      → domain logic

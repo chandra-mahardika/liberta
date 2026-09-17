@@ -1,0 +1,29 @@
+{
+    "name": "chandra/liberta-sql-builder",
+    "description": "Lightweight agnostic sql builder for PHP microservices. Is a SQL-first, state-only query builder with compiler-based multi-dialect support.",
+    "type": "library",
+    "license": "MIT",  
+    "authors": [
+        {
+            "name": "Chandra Mahardika",
+            "email": "chandra.libertania@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+        "Liberta\\Sql\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}

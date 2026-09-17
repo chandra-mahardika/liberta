@@ -1,0 +1,29 @@
+{
+    "name": "chandra/liberta-router",
+    "description": "Lightweight, Agnostic, explicit router for native PHP microservices",
+    "type": "library",
+    "license": "MIT",  
+    "authors": [
+        {
+            "name": "Chandra Mahardika",
+            "email": "chandra.libertania@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+        "Liberta\\Router\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        "Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    }
+}

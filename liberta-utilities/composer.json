@@ -1,0 +1,10 @@
+{
+    "name": "chandra/liberta-utilities",
+    "description": "String and Array helper utilities for Liberta microservices",
+    "type": "library",
+    "license": "MIT",
+    "authors": [{"name": "Chandra Mahardika", "email": "chandra.libertania@gmail.com"}],
+    "autoload": {"psr-4": {"Liberta\\Utilities\\": "src/"}},
+    "require": {"php": "^8.2"},
+    "require-dev": {"phpunit/phpunit": "^10.5"}
+}

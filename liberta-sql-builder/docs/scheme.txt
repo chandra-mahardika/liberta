@@ -1,0 +1,26 @@
+query-builder/
+ ├── composer.json
+ ├── src/
+ │    ├── DB.php
+ │    ├── Connection/
+ │    │    └── Connection.php
+ │    ├── Query/
+ │    │    ├── Builder.php
+ │    ├── Grammar/
+ │    │    ├── Grammar.php
+ │    │    ├── MySqlGrammar.php
+ │    │    └── SqlServerGrammar.php
+ │    └── Exception/
+ │         └── QueryException.php
+ └── README.md
+
+ Test
+
+Linux / Unix
+./vendor/bin/phpunit tests/BuilderTest.php
+
+Windows
+php vendor/bin/phpunit tests/BuilderTest.php
+
+
+
